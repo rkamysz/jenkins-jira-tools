@@ -1,3 +1,4 @@
+@NonCPS
 def getTickets() {
     def tickets = []
     def arr = currentBuild.rawBuild.getChangeSets()
