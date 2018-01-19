@@ -14,7 +14,7 @@ def getTickets() {
 }
 
 def getVersion = sh (
- script: `jq '. | [.name, .version] | join("@")' < package.json`,
+ script: "jq '. | [.name, .version] | join(\"@\")' < package.json",
  returnStdout: true
 )
 
